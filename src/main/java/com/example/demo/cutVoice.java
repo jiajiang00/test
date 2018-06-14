@@ -76,6 +76,12 @@ public class cutVoice {
         return true;
     }
 
+    /**
+     * aaa
+     * @param wavFilePath
+     * @return
+     * @throws Exception
+     */
     public static long getMicrosecondLengthForWav(String wavFilePath) throws Exception {
 
         if (wavFilePath == null || wavFilePath.length() == 0) {
