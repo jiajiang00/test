@@ -59,14 +59,15 @@ public class demo {
     }
 
     @ResponseBody
-    @RequestMapping(value="/test",method = RequestMethod.POST)
+    @RequestMapping(value="/test",method = RequestMethod.GET)
     public String demo1(String name)throws Exception{
 
 //        model.addAttribute("aa", "http://wx.st10086.com/teamkit/meetingpass/ios/asd.xlsx");
 //        model.addAttribute("bb", "http://wx.st10086.com/teamkit/meetingpass/ios/asd.docx");
+        String asd=System.getenv(name);
         System.out.println(name);
 
-        return name;
+        return asd;
 
     }
 
